@@ -1,14 +1,6 @@
 pipeline{
   agent{ docker {image 'node:14-alpine'} }
   stages{
-    stage('Environment') {
-      steps{
-        sh 'git --version'
-        echo "Branch: ${env.BRANCH_NAME}"
-        sh 'docker -v'
-        sh 'printenv'
-      }
-    }
     stage('build'){
       steps{
         echo "running....."
