@@ -13,13 +13,13 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
       
-      - run: yarn install
+      - run: npm install
    
       - save_cache:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
     
-      - run: yarn test
-      - run: yarn build
-      - run: yarn netlify:deploy
+      - run: npm test
+      - run: npm build
+      - run: npm netlify:deploy
