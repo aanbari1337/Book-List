@@ -22,4 +22,4 @@ jobs:
     
       - run: npm test
       - run: npm build
-      - run: npm netlify:deploy
+      - run: npm run netlify:deploy
