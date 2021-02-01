@@ -1,9 +1,9 @@
 import React from 'react'
 import { render, unmountComponentAtNode } from "react-dom";
 import { act } from 'react-dom/test-utils'
-import Navbar from '../Navbar'
+import Navbar from '../components/Navbar'
 import renderer from 'react-test-renderer'
-import { BookContext } from '../../contexts/BookContext';
+import { BookContext } from '../contexts/BookContext';
 
 let container = null;
 beforeEach(() => {

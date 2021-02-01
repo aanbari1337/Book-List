@@ -15,11 +15,11 @@ const NewBookForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input data-testid="title" type="text" placeholder="book title" value={title}
+      <input name="title" type="text" placeholder="book title" value={title}
         onChange={(e) => setTitle(e.target.value)} />
-      <input data-testid="author" type="text" placeholder="author name" value={author}
+      <input name="author" type="text" placeholder="author name" value={author}
         onChange={(e) => setAuthor(e.target.value)} />
-      <input data-testid="submit" type="submit" value="add book" />
+      <input type="submit" value="add book" />
     </form>
   );
 }
