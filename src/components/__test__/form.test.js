@@ -18,9 +18,9 @@ afterEach(() => {
   container = null;
 });
 
-it("changes value when clicked", () => {
-  const submit = jest.fn();
-  act(() => {
-    render(<NewBookForm submit={submit} />, container);
-  });
-})
+// it("changes value when clicked", () => {
+//   const submit = jest.fn();
+//   act(() => {
+//     render(<NewBookForm submit={submit} />, container);
+//   });
+// })
